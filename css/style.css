@@ -1,0 +1,32 @@
+/* font style */
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Darker+Grotesque:wght@300&family=Gabarito:wght@400;500;600;700;800;900&family=Inclusive+Sans&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Darker+Grotesque:wght@300&family=Inclusive+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Darker+Grotesque:wght@300&family=Inclusive+Sans&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Default Design =========================================== */
+
+:root {
+    --bg-color: rgb(241, 239, 239);
+    --bg-color2: rgb(178, 176, 176);
+    --main-color: rgb(214, 78, 4);
+    --second-color: rgb(10, 75, 61);
+    --third-color: rgb(234, 191, 0);
+    --text-color: rgb(34, 34, 34);
+    --text-color2: rgb(255, 255, 255);
+    --text-font-title: 'DM Serif Display', serif;
+    --text-font: 'Gabarito', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    /* overflow: hidden; */
+    font-family: var(--text-font);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+
+/* Header Design =========================================== */
