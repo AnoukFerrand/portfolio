@@ -6,13 +6,15 @@
 /* Default Design =========================================== */
 
 :root {
-    --bg-color: rgb(241, 239, 239);
-    --bg-color2: rgb(178, 176, 176);
-    --main-color: rgb(214, 78, 4);
-    --second-color: rgb(10, 75, 61);
-    --third-color: rgb(234, 191, 0);
-    --text-color: rgb(34, 34, 34);
-    --text-color2: rgb(255, 255, 255);
+    --color-white: rgb(241, 239, 239);
+    --color-dark: rgb(39, 38, 38);
+    --color1: #FDF0E3;
+    --color2: #EEB69E;
+    --color3: #AD562F;
+    --color4: #1F392E;
+    --color-flowers: #FF6B00;
+    --text-color: #1F392E;
+    --text-color-light: rgb(241, 239, 239);
     --text-font-title: 'DM Serif Display', serif;
     --text-font: 'Gabarito', sans-serif;
 }
@@ -24,7 +26,7 @@ html {
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--color-white);
     color: var(--text-color);
 }
 
