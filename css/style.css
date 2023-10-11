@@ -42,13 +42,12 @@ body {
     box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px; 
 }
 
-.navbar a {
+/* .navbar a {
     font-size: 2rem;
     color: var(--text-color);
-    margin-left: 4rem;
-}
+    margin: 0 3rem 0 3rem; 
+} */
 
-/* HAMBURGER RESPONSIVE TEST */
 .container {
     display: flex;
     justify-content: space-between;
@@ -56,27 +55,85 @@ body {
     z-index: 100;
 }
 
-.hamburger {
-    display: none;
+.logo {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0 3rem 0 3rem; 
 }
 
-/* .logo {
-font-weight: 600;
-}*/
-
-.menu {
+.container__menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
 } 
 
-.menu__links {
+.menu__links svg {
     display: none;
 }
 
-/* Responsive mobile 480px ==================================== */
-@media only screen and (min-width : 480px) {
+.menu__links {
+    /* display: inline-block; */
+    background-color: var(--color3);
+    color: var(--text-color-light);
+    height: 20%;
+    width: 18rem;
+    position: fixed;
+    top: 0;
+    right: -18rem;
+    padding: 3rem 2.5rem 2.5rem;
+    transition: left 0.5s ease;
+}
+
+.menu__links.active {
+    right: 0;
+}
+
+.close {
+    font-size: 2.2rem;
+    position: absolute;
+    top: 10%;
+    right: 25px;
+}
+.close:hover {
+    color: var(--color2);
+}   
+
+.menu__links ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.4rem;
+    height: 100%;
+}
+
+.menu__link {
+    color: var(--text-color-light);
+    font-size: 2rem;
+    font-weight: 100;
+    margin-top: 1rem;
+    transition: 0.3s;
+}
+.menu__link:hover {
+    color: var(--color2);
+}   
+
+/* Icône burger */
+.burger-icon span {
+    display: block;
+    width: 23px;
+    height: 3px;
+    background-color: var(--color4);
+    margin: 5px 0;
+}
+
+
+
+
+
+
+/* Responsive mobile +480px --------------------------------------- */
+@media only screen and (min-width : 768px) {
     .menu__links {
         visibility: visible;
         display: flex;
@@ -90,6 +147,9 @@ font-weight: 600;
         text-decoration: none;
         position: relative;
         padding: 14px 0;
+        font-size: 2rem;
+        color: var(--text-color);
+        margin: 0 3rem 0 3rem;
     }
 
     /* Animation circle navbar */
