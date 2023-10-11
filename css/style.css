@@ -42,12 +42,6 @@ body {
     box-shadow: rgba(87, 87, 87, 0.24) 0px 3px 8px; 
 }
 
-/* .navbar a {
-    font-size: 2rem;
-    color: var(--text-color);
-    margin: 0 3rem 0 3rem; 
-} */
-
 .container {
     display: flex;
     justify-content: space-between;
@@ -74,7 +68,6 @@ body {
 }
 
 .menu__links {
-    /* display: inline-block; */
     background-color: var(--color3);
     color: var(--text-color-light);
     height: 20%;
@@ -128,17 +121,36 @@ body {
 }
 
 
-
-
-
-
 /* Responsive mobile +480px --------------------------------------- */
 @media only screen and (min-width : 768px) {
-    .menu__links {
-        visibility: visible;
+    #openBtn {
+        display: none;
+    }
+    #closeBtn {
+        display: none;
+    }
+
+    .menu__links ul {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        flex-direction: row;
+        z-index: 100;
+        margin-top: 0;
+        height: 0;
+    }
+
+    .menu__links {
+        background-color: var(--color-white);
+        color: var(--text-color);
+        top: auto;
+        height: 0;
+        width: 0;
+        right: 35%;
+        padding: 0;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
         z-index: 100;
     }
 
@@ -146,10 +158,11 @@ body {
         display: inline-block;
         text-decoration: none;
         position: relative;
-        padding: 14px 0;
+        /* padding: 14px 0; */
         font-size: 2rem;
         color: var(--text-color);
         margin: 0 3rem 0 3rem;
+        transition: none;
     }
 
     /* Animation circle navbar */
