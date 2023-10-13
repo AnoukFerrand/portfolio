@@ -30,7 +30,7 @@ main {
     align-items: center;
 }
 
-/* Left part ==================================== */
+/* Left part ------------------------------------ */
 
 .cv {
     position: relative;
@@ -43,30 +43,30 @@ main {
 }
 .cv__link {
     font-family: var(--text-font-title);
-    font-size: 3.5rem;
+    font-size: 8.5vw;
     font-weight: 560;
 }
 
 .profil {
-    width: 17rem;
-    height: 17rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 50%;
     overflow: hidden;
     z-index: 5;
 }
 .img__profil {
-    position: relative;
-    top: -1rem;
+    /* position: relative;
+    top: -1rem; */
     width: 100%;  
     object-fit: cover;
     transition: transform .3s ease-in-out;
 }
 
-/* Right part ==================================== */
+/* Right part ------------------------------------ */
 
 .name {
     font-family: var(--text-font-title);
-    font-size: 6rem;
+    font-size: 20vw;
     color: var(--text-color);
     margin-bottom: 1rem;
     font-weight: 560;
@@ -74,7 +74,56 @@ main {
 
 .work {
     font-family: var(--text-font);
-    font-size: 1.5rem;
+    font-size: 4.15vw;
     color: var(--text-color);
-    margin-bottom: 1rem;
+}
+
+/* Responsive mobile +768px ==================================== */
+@media only screen and (min-width : 768px) {
+    .main__top {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Left part ------------------------------------ */
+
+    .home__left {
+        width: 100%;
+        height: 100%;
+        padding-top: 6rem;
+    }
+
+    .cv {
+        padding: 7rem;
+        top: -3rem;
+        right: 14rem;
+        border: solid 5px var(--color-white);
+
+    }
+    .cv__link {
+        font-size: 8rem;
+    }
+    
+    .profil {
+        width: 40rem;
+        height: 40rem;
+        position: relative;
+        top: -12rem;
+    }
+
+    /* Right part ------------------------------------ */
+
+    .home__right {
+        padding-top: 6rem;
+    }
+
+    /* .name {
+        font-size: 10vw;
+    }
+
+    .work {
+        font-size: 2.05vw;
+    } */
+
 }
