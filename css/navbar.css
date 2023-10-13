@@ -1,36 +1,5 @@
-/* font style */
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Darker+Grotesque:wght@300&family=Gabarito:wght@400;500;600;700;800;900&family=Inclusive+Sans&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Darker+Grotesque:wght@300&family=Inclusive+Sans&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display&family=Darker+Grotesque:wght@300&family=Inclusive+Sans&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/* Default Design =========================================== */
-:root {
-    --color-white: rgb(255, 255, 255);
-    --color-dark: rgb(39, 38, 38);
-    --color1: #FDF0E3;
-    --color2: #EEB69E;
-    --color3: #AD562F;
-    --color4: #1F392E;
-    --color-details: #FF6B00;
-    --text-color: #1F392E;
-    --text-color-light: rgb(241, 239, 239);
-    --text-font-title: 'DM Serif Display', serif;
-    --text-font: 'Gabarito', sans-serif;
-}
-
-html {
-    font-size: 62.5%;
-    /* overflow: hidden; */
-    font-family: var(--text-font);
-}
-
-body {
-    background-color: var(--color-white);
-    color: var(--text-color);
-}
-
-
 /* Header Design =========================================== */
+
 .header {
     position: fixed;
     top: 0;
@@ -121,7 +90,7 @@ body {
 }
 
 
-/* Responsive mobile +480px --------------------------------------- */
+/* Responsive mobile +768px --------------------------------------- */
 @media only screen and (min-width : 768px) {
     #openBtn {
         display: none;
@@ -129,17 +98,7 @@ body {
     #closeBtn {
         display: none;
     }
-
-    .menu__links ul {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        flex-direction: row;
-        z-index: 100;
-        margin-top: 0;
-        height: 0;
-    }
-
+    
     .menu__links {
         background-color: var(--color-white);
         color: var(--text-color);
@@ -150,6 +109,16 @@ body {
         padding: 0;
         margin-right: 3rem;
         z-index: 100;
+    }
+
+    .menu__links ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: row;
+        z-index: 100;
+        margin-top: 0;
+        height: 0;
     }
 
     .menu__link {
@@ -163,7 +132,7 @@ body {
         transition: none;
     }
 
-    /* Animation circle navbar */
+    /* Animation hand drawing circle navbar */
     .menu__link svg {
         display: block;
         fill: none;
@@ -179,6 +148,14 @@ body {
         transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
         z-index: -1;
     }
+    .menu__link:hover svg {
+        stroke-dashoffset: 0;
+        opacity: 1;
+        transition: opacity 0s, stroke-dashoffset 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .menu__link:hover {
+        color: var(--text-color);
+    }
 
     #circle1 {
         width: calc(100% + 50px);
@@ -189,18 +166,4 @@ body {
     #circle3 {
         width: calc(100% + 15px);
     }
-        
-    .menu__link:hover svg {
-        stroke-dashoffset: 0;
-        opacity: 1;
-        transition: opacity 0s, stroke-dashoffset 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-    }
-
-    .menu__link:hover {
-        color: var(--text-color);
-    }
-}
-
-.logo {
-    /* add image logo SVG animated */
 }
