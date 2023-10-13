@@ -132,7 +132,7 @@ body {
 
     .menu__links ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         flex-direction: row;
         z-index: 100;
@@ -146,11 +146,9 @@ body {
         top: auto;
         height: 0;
         width: 0;
-        right: 35%;
+        right: 0%;
         padding: 0;
-        /* display: flex; */
-        /* justify-content: space-between; */
-        /* align-items: center; */
+        margin-right: 3rem;
         z-index: 100;
     }
 
@@ -167,6 +165,7 @@ body {
 
     /* Animation circle navbar */
     .menu__link svg {
+        display: block;
         fill: none;
         stroke-miterlimit: 10;
         stroke-dasharray: 338;
@@ -195,6 +194,10 @@ body {
         stroke-dashoffset: 0;
         opacity: 1;
         transition: opacity 0s, stroke-dashoffset 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    .menu__link:hover {
+        color: var(--text-color);
     }
 }
 
