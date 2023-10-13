@@ -7,7 +7,6 @@ main {
 
 .main__top {
     height: 100vh;
-    background-color: var(--color4);
     display: flex;
     flex-direction: column;
 }
@@ -20,6 +19,8 @@ main {
     justify-content: center;
     align-items: center;
     background-color: var(--color1);
+    /* padding: 7rem; */
+
 }
 .home__right {
     width: 100%;
@@ -28,7 +29,13 @@ main {
     flex-direction: column;
     justify-content: center;
     background-color: var(--color2);
+    align-items: center;
+
+    /* padding: 8rem; */
+
 }
+
+/* Left part ==================================== */
 
 .cv {
     position: relative;
@@ -44,12 +51,14 @@ main {
 .cv__link {
     font-family: var(--text-font-title);
     font-size: 3.5rem;
+    font-weight: 560;
+
 
 }
 
 .profil {
-    width: 15rem;
-    height: 15rem;
+    width: 17rem;
+    height: 17rem;
     border-radius: 50%;
     overflow: hidden;
     z-index: 5;
@@ -60,4 +69,22 @@ main {
     width: 100%;  
     object-fit: cover;
     transition: transform .3s ease-in-out;
-  }
+}
+
+/* Right part ==================================== */
+
+.name {
+    font-family: var(--text-font-title);
+    font-size: 6rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-weight: 560;
+
+}
+
+.work {
+    font-family: var(--text-font);
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
