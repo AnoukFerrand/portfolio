@@ -44,7 +44,7 @@
     position: fixed;
     top: 0;
     right: -18rem;
-    padding: 3rem 2.5rem 2.5rem;
+    padding: 3rem 2.5rem 15.5rem;
     transition: left 0.5s ease;
 }
 
@@ -73,7 +73,7 @@
     color: var(--text-color-light);
     font-size: 2rem;
     font-weight: 100;
-    margin-top: 1rem;
+    margin: 1rem;
     transition: 0.3s;
 }
 .menu__link:hover {

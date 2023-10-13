@@ -1,0 +1,42 @@
+/* Main section Top Design =========================================== */
+
+main {
+    min-height: 100vh;
+    /* padding: 13rem 9% 2rem; */
+}
+
+.main__top {
+    height: 100vh;
+    background-color: var(--color4);
+    display: flex;
+    flex-direction: column;
+}
+
+.home__left {
+    width: 100%;
+    height: 115%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color1);
+}
+.home__right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color2);
+}
+
+.profil {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.img__profil {
+    width: 100%;  
+    object-fit: cover;
+    transition: transform .3s ease-in-out;
+  }
