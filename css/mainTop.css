@@ -102,12 +102,12 @@ main {
 
     }
     .cv__link {
-        font-size: 8rem;
+        font-size: 7rem;
     }
     
     .profil {
-        width: 40rem;
-        height: 40rem;
+        height: 40vh;
+
         position: relative;
         top: -12rem;
     }
@@ -118,12 +118,12 @@ main {
         padding-top: 6rem;
     }
 
-    /* .name {
+    .name {
         font-size: 10vw;
     }
 
     .work {
         font-size: 2.05vw;
-    } */
+    }
 
 }
