@@ -17,6 +17,9 @@
 --text-color-light: rgb(241, 239, 239);
 --text-font-title: 'DM Serif Display', serif;
 --text-font: 'Gabarito', sans-serif;
+--profil-img-x: 200px;
+--profil-img-y: 200px;
+--profil-img-size: 100%;
 }
 
 html {
