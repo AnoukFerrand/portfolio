@@ -110,13 +110,15 @@ main {
     }
     
     .profil {
-        background-image: url(../assets/PhotoOrange.jpg);
         height: 400px;
         width: 400px;
         position: relative;
         top: -12rem;
+        /* Animation profil picture */
+        background-image: url(../assets/PhotoOrange.jpg);
     }
 
+    /* Animation profil picture */
     .profil::after {
         content: '';
         width: 100%;
@@ -128,21 +130,10 @@ main {
         background-size: cover;
         z-index: 1;
         mask-repeat: no-repeat no-repeat;
-        mask-image: radial-gradient(var(--profil-img-size) at var(--profil-img-x) var(--profil-img-y), transparent 95%, black 100%);
+        mask-image: radial-gradient(var(--profil-img-size) at var(--profil-img-x) var(--profil-img-y), transparent 25%, black 70%);
         -webkit-mask-repeat: no-repeat no-repeat;
-        -webkit-mask-image: radial-gradient(var(--profil-img-size) at var(--profil-img-x) var(--profil-img-y), transparent 95%, black 100%);   
+        -webkit-mask-image: radial-gradient(var(--profil-img-size) at var(--profil-img-x) var(--profil-img-y), transparent 25%, black 70%);   
     }
-
-
-    /* TEST */
-    /* .blur {
-        position: absolute;
-        height: 100px;
-        width: 100px;
-        background-color: transparent;
-        border-radius: 50%;
-    } */
-
 
     /* Right part ------------------------------------ */
 
