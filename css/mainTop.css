@@ -1,4 +1,4 @@
-/* Main section Top Design =========================================== */
+/* Main section top Design =========================================== */
 
 main {
     min-height: 100vh;
@@ -82,6 +82,85 @@ main {
     color: var(--text-color);
 }
 
+/* Main section top__about Design =========================================== */
+
+.about {
+    width: 100%;
+    /* height: 300px; */
+}
+
+.about p {
+    font-size: 3.5vw;
+    line-height: 1.7;
+    /* text-align: justify; */
+    color: var(--text-color);
+    padding: 2rem;
+    margin: 4rem;
+}
+
+/* About paragraphe style */
+.about p span {
+    position: relative;
+}
+
+/* First */
+.first::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--color-details);
+    /* transition: width .3s ease-in-out; */
+}
+/* .first:hover::after {
+    width: 100%;
+    color: brown;
+} */
+
+/* Second */
+#about__circle {
+    display: block;
+    fill: none;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 338;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    opacity: 1;
+    width: calc(100% + 30px);
+    transform: translate(-50%, -50%);
+    transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+    z-index: -1;
+}
+
+/* Third */
+.third {
+    background-color: var(--color1);
+}
+
+/* Fourth */
+#heart {
+    display: block;
+    fill: none;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 338;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    position: absolute;
+    rotate: -20deg;
+    top: 20%;
+    left: 70%;
+    opacity: 1;
+    width: calc(100% + 5px);
+    transform: translate(-50%, -50%);
+    transition: stroke-dashoffset 0s 0.2s, opacity 0.2s;
+    z-index: -1;
+}
+
+
 /* Responsive mobile +768px ==================================== */
 @media only screen and (min-width : 768px) {
     .main__top {
@@ -149,4 +228,25 @@ main {
         font-size: 2.05vw;
     }
 
+    /* Main section top__about Design =========================================== */
+
+    .about p {
+        position: relative;
+        font-size: 1.5vw;
+        padding: 12rem;
+        margin: 20rem 35rem;
+        border: solid 6px var(--color3);
+        
+    }
+
+    .about p::after {
+        content: '';
+        width: 101%;
+        height: 103%;
+        position: absolute;
+        top: -1.5%;
+        left: -0.5%;
+        border: solid 6px var(--color4);
+        rotate: -3.5deg;
+    }
 }
