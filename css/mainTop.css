@@ -101,6 +101,7 @@ main {
 /* About paragraphe style */
 .about p span {
     position: relative;
+    /* display: inline-block; */
 }
 
 /* First */
@@ -235,8 +236,42 @@ main {
         font-size: 1.5vw;
         padding: 12rem;
         margin: 20rem 35rem;
+    }
+
+    .about p::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
         border: solid 6px var(--color3);
-        
+        z-index: -2;
+    }
+    .about p:hover::before {
+        animation: shake 0.9s ease-in-out alternate;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: rotate(6deg);
+        }
+
+        10% {
+            transform: rotate(-6deg);
+        }
+        20% {
+            transform: rotate(6deg);
+        }
+        30% {
+            transform: rotate(-6deg);
+        }
+        40% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
     }
 
     .about p::after {
@@ -248,5 +283,65 @@ main {
         left: -0.5%;
         border: solid 6px var(--color4);
         rotate: -3.5deg;
+        z-index: -1;
+
     }
+    .about p:hover::after {
+        animation: shakeSecond 0.9s ease-in-out alternate;
+    }
+
+    @keyframes shakeSecond {
+        0% {
+            transform: rotate(-6deg);
+        }
+        5% {
+            transform: rotate(6deg);
+        }
+        10% {
+            transform: rotate(-6deg);
+        }
+        15% {
+            transform: rotate(6deg);
+        }
+        20% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    /* First */
+    .first::after {
+        width: 0%;
+        transition: width .3s ease-in-out;
+    }
+    .first:hover::after {
+        width: 100%;
+    }
+
+    /* Second */
+    #about__circle {
+        stroke-dashoffset:338;
+        opacity: 0;
+        z-index: 1;
+    }
+    #about__circle:hover {
+        stroke-dashoffset: 0;
+        opacity: 1;
+        transition: opacity 0s, stroke-dashoffset 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    /* Third */
+    .third {
+        color: inherit;
+        text-decoration: none;
+        background: linear-gradient(to top, var(--color1) 100%, var(--color1) 30px, transparent 5px) no-repeat;
+        background-size: 0 100%;
+        transition: background-size 0.3s;
+    }
+    .third:hover {
+        background-size: 100% 100%;
+    }
+
 }

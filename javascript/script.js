@@ -46,6 +46,7 @@ function profilPictureMouseEffect() {
     });
 }
 
+// test animation responsive mobile ==============================================
 // Animation about me paragraphe
 function textAboutMeScrollEffect() { 
     let about = document.querySelector('.about');
