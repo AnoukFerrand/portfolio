@@ -355,4 +355,16 @@ main {
             background-size: 100% 100%;
         }
     }
+
+    /* Fourth */
+    #heart {
+        stroke-dashoffset:338;
+        opacity: 0;
+        z-index: 1;
+    }
+    #heart:hover {
+        stroke-dashoffset: 0;
+        opacity: 1;
+        transition: opacity 0s, stroke-dashoffset 0.5s cubic-bezier(0.245, 0.045, 0.355, 1);
+    }
 }
