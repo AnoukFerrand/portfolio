@@ -112,12 +112,7 @@ main {
     width: 100%;
     height: 3px;
     background: var(--color-details);
-    /* transition: width .3s ease-in-out; */
 }
-/* .first:hover::after {
-    width: 100%;
-    color: brown;
-} */
 
 /* Second */
 #about__circle {
@@ -313,11 +308,20 @@ main {
 
     /* First */
     .first::after {
-        width: 0%;
-        transition: width .3s ease-in-out;
+        width: 100%;
     }
     .first:hover::after {
-        width: 100%;
+        width: 0%;
+        animation: underline 0.3s ease-in-out forwards;
+    }
+
+    @keyframes underline {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
     }
 
     /* Second */
@@ -337,11 +341,18 @@ main {
         color: inherit;
         text-decoration: none;
         background: linear-gradient(to top, var(--color1) 100%, var(--color1) 30px, transparent 5px) no-repeat;
-        background-size: 0 100%;
-        transition: background-size 0.3s;
-    }
-    .third:hover {
         background-size: 100% 100%;
     }
+    .third:hover {
+        animation: background-size 0.5s ease-in-out forwards;
+    }
 
+    @keyframes background-size {
+        0% {
+            background-size: 0% 100%;
+        }
+        100% {
+            background-size: 100% 100%;
+        }
+    }
 }
