@@ -34,11 +34,11 @@ main {
 
 .cv {
     position: relative;
-    top: 4.5rem;
-    right: 7rem;
+    top: 4.2rem;
+    right: 8rem;
     border: solid 3px var(--color-white);
     border-radius: 50%;
-    padding: 3.2rem;
+    padding: 3vh;
     z-index: 1;
 }
 .cv__link {
@@ -164,8 +164,8 @@ main {
 }
 
 
-/* Responsive mobile +768px ==================================== */
-@media only screen and (min-width : 768px) {
+/* Responsive mobile +1024px ==================================== */
+@media only screen and (min-width : 1024px) {
     .main__top {
         height: 100vh;
         display: flex;
@@ -242,7 +242,7 @@ main {
         position: relative;
         font-size: 1.5vw;
         padding: 12rem;
-        margin: 20rem 35rem;
+        margin: 20rem;
     }
 
     .about p::before {

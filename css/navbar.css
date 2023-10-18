@@ -95,8 +95,8 @@
 }
 
 
-/* Responsive mobile +768px --------------------------------------- */
-@media only screen and (min-width : 768px) {
+/* Responsive mobile +1024px --------------------------------------- */
+@media only screen and (min-width : 1024px) {
     #openBtn {
         display: none;
     }

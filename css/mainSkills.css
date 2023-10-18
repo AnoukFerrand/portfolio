@@ -62,8 +62,8 @@ figcaption {
     color: aquamarine;
 }
 
-/* Responsive mobile +768px ==================================== */
-@media only screen and (min-width : 768px) {
+/* Responsive mobile +1024px ==================================== */
+@media only screen and (min-width : 1024px) {
 
     .main__skills {
         height: 150vh;
