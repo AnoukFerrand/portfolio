@@ -88,9 +88,7 @@ main {
     height: 30vh;
     display: flex;
     align-items: center;
-    margin 4rem;
-    background-color: brown;
-
+    padding: 4rem;
 }
 
 .about {
@@ -103,7 +101,7 @@ main {
     line-height: 1.7;
     /* text-align: justify; */
     color: var(--text-color);
-    padding: 2rem;
+    /* padding: 2rem; */
     /* margin: 0 4rem; */
 }
 
@@ -234,6 +232,11 @@ main {
     }
 
     /* Main section top__about Design =========================================== */
+
+    .main__top__about {
+        height: 92vh;
+        padding: 0;
+    }
 
     .about p {
         position: relative;
