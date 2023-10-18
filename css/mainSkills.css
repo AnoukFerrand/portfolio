@@ -60,5 +60,54 @@ figure {
 figcaption {
     background-color: #e60000;
     color: aquamarine;
+}
+
+/* Responsive mobile +768px ==================================== */
+@media only screen and (min-width : 768px) {
+
+    .main__skills {
+        height: 150vh;
+        padding: 0;
+    }
+
+    .skills__all {
+        width: 93vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 7rem;
+        margin: auto;
+        align-content: space-between;
+    }
+
+    #skills__list {
+        /* padding-top: 7rem; */
+        width: 32vw;
+        height: 64vh;
+        padding: 3rem;
+        border: solid 1px var(--color3);
+        border-radius: 50%;
+    }
+
+    .skills__title {
+        font-size: 4vw;
+    }
+
+    #list__title {
+        font-size: 1.5vw;
+        /* padding: 12rem 0 3.5rem 0; */
+        padding: 0;
+
+    }
+
+    #articles {
+        padding: 0 5rem;
+    }
+
+    figure {
+        width: 100px;
+        margin: 2rem;
+    } 
 
 }
