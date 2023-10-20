@@ -4,6 +4,7 @@
     /* height: 144vh;
     width: 100%; */
     background-color: var(--color1);
+    padding: 4rem;
 }
 
 .skills__title {
@@ -12,7 +13,7 @@
     font-family: var(--text-font-title);
     font-size: 8.5vw;
     font-weight: 560;
-    padding-top: 4rem;
+    padding-top: 2rem;
     text-align: center;
 }
 
@@ -44,7 +45,7 @@
 	justify-content: center;
 	align-items: stretch;
 	align-content: stretch;
-    padding: 0 3.5rem;
+
 }
 
 figure {
@@ -84,7 +85,7 @@ figcaption {
     #skills__list {
         /* padding-top: 7rem; */
         width: 32vw;
-        height: 64vh;
+        height: 40vh;
         padding: 3rem;
         border: solid 1px var(--color3);
         border-radius: 50%;
@@ -92,6 +93,7 @@ figcaption {
 
     .skills__title {
         font-size: 4vw;
+        padding-bottom: 4rem;
     }
 
     #list__title {
@@ -103,11 +105,12 @@ figcaption {
 
     #articles {
         padding: 0 5rem;
+        margin-top: 2rem;
     }
 
     figure {
-        width: 100px;
-        margin: 2rem;
+        width: 60px;
+        margin: 1rem;
     } 
 
 }
