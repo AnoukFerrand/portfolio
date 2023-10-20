@@ -99,7 +99,7 @@ section {
 /* Main section top__about Design =========================================== */
 
 .main__top__about {
-    height: 30vh;
+    min-height: 30vh;
     display: flex;
     align-items: center;
     padding: 4rem;
@@ -178,6 +178,11 @@ section {
 }
 
 /* rajouter breakpoint tablette pour gérer les min et max height de la section about */
+
+/* Responsive mobile +1024px ==================================== */
+/* @media only screen and (min-width : 1024px) {
+
+} */
 
 /* Responsive mobile +1024px ==================================== */
 @media only screen and (min-width : 1024px) {
