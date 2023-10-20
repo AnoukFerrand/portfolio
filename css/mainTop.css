@@ -4,25 +4,29 @@ main {
     min-height: 100vh;
 }
 
+section {
+    min-height: 30vh;
+    /* padding: 10rem 9% 2rem; */
+}
+
 .main__top {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
 }
 
 .home__left {
     width: 100%;
-    height: 115%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /* height: 115%; */
+
     background-color: var(--color1);
 }
 
 .home__right {
     width: 100%;
-    height: 100%;
+    /* height: 100%;
+    padding: 5rem 0; */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,6 +36,13 @@ main {
 
 /* Left part ------------------------------------ */
 
+.home__left__infos {
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .cv {
     position: relative;
     top: 4.2rem;
@@ -68,6 +79,9 @@ main {
 
 /* Right part ------------------------------------ */
 
+.home__right__infos {
+    padding: 8rem 0;
+}
 .name {
     font-family: var(--text-font-title);
     font-size: 20vw;
@@ -163,11 +177,12 @@ main {
     z-index: -1;
 }
 
+/* rajouter breakpoint tablette pour gérer les min et max height de la section about */
 
 /* Responsive mobile +1024px ==================================== */
 @media only screen and (min-width : 1024px) {
     .main__top {
-        height: 100vh;
+        /* height: 100vh; */
         display: flex;
         flex-direction: row;
     }
@@ -176,7 +191,7 @@ main {
 
     .home__left {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         padding-top: 6rem;
     }
 
@@ -221,6 +236,8 @@ main {
 
     .home__right {
         padding-top: 6rem;
+        /* height: 100vh; */
+
     }
 
     .name {
