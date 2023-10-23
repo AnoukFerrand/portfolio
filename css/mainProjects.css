@@ -1,13 +1,13 @@
 /* Main section projects Design =========================================== */
 
 .main__projects {
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .projects__title {
     /* position: absolute; */
     color: var(--text-color);
-    padding-top: 2rem;
+    padding: 4rem 0;
     text-align: center;
 }
 
@@ -29,7 +29,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
 }
 
 #project {
@@ -38,18 +37,61 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 4rem;
+    background-color: var(--color2);
 }
 
+
 #img__project {
-    height: 200px;
-    clip-path: ellipse(40% 50%);
+    position: relative;
+    height: 180px;
+    clip-path: ellipse(41% 50%);
     filter: grayscale(100%);
 }
 
-/* test to put a background special*/
-/* #picture::after {
-    position: absolute;
-    background-color: var(--color2);
+#picture {
     width: 100%;
-    height: 100px;
+}
+/* test to put a background special*/
+/* #project::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 83%;
+    height: 40%;
+    background: var(--color2);
+    z-index: -1;
+    align-items: right;
 } */
+
+#infos {
+    margin: 2rem 0;
+    text-align: left;
+}
+
+#infos__title {
+    font-size: 4.5vw;
+    font-weight: 300;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+}
+#infos__title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--color3);
+    margin-top: 0.2rem;
+}
+
+#infos__text {
+    font-size: 3.5vw;
+    padding: 0 3rem;
+}
+
+#info__languages {
+    font-size: 3.5vw;
+    font-weight: 700;
+    padding: 1.5rem 3rem;
+}
