@@ -1,8 +1,8 @@
 /* Main section projects Design =========================================== */
 
-.main__projects {
+/* .main__projects {
     margin: 0 20rem;
-}
+} */
 
 .projects__title {
     color: var(--text-color);
@@ -57,6 +57,9 @@
 #picture {
     width: 100%;
     background-color: var(--color1);
+}
+
+.picture__left, .picture__right {
     padding: 4rem;
 }
 /* test to put a background special*/
@@ -73,8 +76,9 @@
 } */
 
 .infos__left, .infos__right {
-    margin: 4rem 0;
+    width: 100%;
     text-align: left;
+    margin: 4rem 0;
 }
 
 .infos__title__left, .infos__title__right {
@@ -102,8 +106,8 @@
 
 .infos__text__left, .infos__text__right {
     font-size: 3.5vw;
-    padding: 0 4rem;
     line-height: 1.7;
+    padding: 0 4rem;
 }
 
 .info__languages__left, .info__languages__right {
@@ -120,7 +124,7 @@
         padding: 10rem 0  6rem;
     }
 
-    #picture {
+    .picture__left, .picture__right {
         padding: 12rem;
     }
 
@@ -157,13 +161,39 @@
         font-size: 2vw;
     }
 
+    #picture {
+        /* min-width: 10vw; */
+        max-width: 30vw;
+    }
+
+    #project:hover {
+
+    }
     /* left part ----------------------- */
     .project__left {
         flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .picture__left {
+        width: 50%;
+        /* padding: 8rem 9rem 8rem 15rem; */
+        padding: 0;
+        padding-right: 4rem;
+    }
+
+    #infos {
+        margin: 0;
+        margin-left: 6rem;
+    }
+    .infos__left {
+        width: 50%;
     }
 
     .infos__title__left {
-        font-size: 2.5vw;
+        font-size: 2vw;
+        padding-left: 0;
+
     }
     .infos__title__left::after {
         height: 4px;
@@ -171,12 +201,25 @@
 
     .infos__text__left {
         font-size: 1.5vw;
-        line-height: 1;
+        line-height: 1.2;
+        margin: 0;
+        margin-right: 12rem;
+        padding: 0;
+        padding: 2rem 0;
+
+        /* margin-right: 7rem;
+        padding-left: 0; */
     }
     
     .info__languages__left {
         font-size: 1.5vw;
-        line-height: 1;
+        line-height: 1.2;
+        margin: 0;
+        margin-right: 12rem;
+        padding: 0;
+
+        /* padding-left: 0;
+        margin-right: 7rem; */
     }
 
     /* right part ----------------------- */
@@ -184,14 +227,18 @@
         flex-direction: row-reverse;
     }
 
+    .picture__right {
+        padding: 8rem 15rem 8rem 9rem;
+
+    }
+
     .infos__right {
         text-align: right;
     }
 
     .infos__title__right {
-        font-size: 2.5vw;
+        font-size: 2vw;
         padding-left: 0;
-        padding-right: 10rem;
     }
     .infos__title__right::after {
         height: 4px;
@@ -199,17 +246,23 @@
 
     .infos__text__right {
         font-size: 1.5vw;
-        line-height: 1;
+        line-height: 1.2;
+        margin-left: 10rem;
+        padding-right: 0;
+
     }
     
     .info__languages__right {
         font-size: 1.5vw;
-        line-height: 1;
+        line-height: 1.2;
+        padding-right: 0;
+        margin-left: 10rem;
+
+
     }
 
-    /* #picture {
+    #picture {
         background-color: var(--color-white);
         background-size: 60%;
-    } */
+    }
 }
-
