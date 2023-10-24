@@ -5,9 +5,10 @@
     min-height: 25vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: var(--color3);
-    padding: 4rem 2.5rem;
+    padding: 2rem 2.5rem;
 }
 
 .contact__title {
@@ -15,7 +16,7 @@
     color: var(--text-color-light);
     font-size: 8.5vw;
     font-weight: 560;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .contact__infos {
@@ -68,9 +69,24 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin: 1rem 0;
 }
 
 .flower__game {
     display: none;
+}
+
+/* Responsive tablet +768px ==================================== */
+@media only screen and (min-width : 768px) {
+    .main__contact {
+        padding: 10rem 6rem;
+    }
+
+    .social__media {
+        padding: 3rem;
+    }
+
+    footer {
+        padding: 10rem 2rem 7rem;
+    }
 }
