@@ -1,8 +1,8 @@
 /* Main section projects Design =========================================== */
-/* 
+
 .main__projects {
-    padding: 2rem 0;
-} */
+    margin: 0 20rem;
+}
 
 .projects__title {
     color: var(--text-color);
@@ -30,7 +30,7 @@
     align-items: center;
 }
 
-#project {
+.project__left, .project__right {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,16 +38,20 @@
     text-align: center;
 }
 
+.project__left img, .project__right img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
 #img__project {
     position: relative;
     width: 100%;
+    height: auto;
     border-radius: 20px;
     box-shadow: 0px 0px 16px 10px rgba(0, 0, 0, 0.1);
-
-    /* height: 180px; */
-    /* clip-path: ellipse(41% 50%);
-    filter: grayscale(100%); */
 }
 
 #picture {
@@ -68,18 +72,26 @@
     align-items: right;
 } */
 
-#infos {
+.infos__left, .infos__right {
     margin: 4rem 0;
     text-align: left;
 }
 
-#infos__title {
+.infos__title__left, .infos__title__right {
     font-size: 6vw;
     font-weight: 300;
     padding-bottom: 2rem;
     padding-left: 4rem;
 }
-#infos__title::after {
+.infos__title__left::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: var(--color3);
+    margin-top: 0.2rem;
+}
+.infos__title__right::after {
     content: '';
     display: block;
     width: 100%;
@@ -88,13 +100,13 @@
     margin-top: 0.2rem;
 }
 
-#infos__text {
+.infos__text__left, .infos__text__right {
     font-size: 3.5vw;
     padding: 0 4rem;
     line-height: 1.7;
 }
 
-#info__languages {
+.info__languages__left, .info__languages__right {
     font-size: 3.5vw;
     font-weight: 500;
     padding: 1.5rem 4rem;
@@ -105,7 +117,7 @@
 /* Responsive tablet +768px ==================================== */
 @media only screen and (min-width : 768px) {
     .projects__title {
-        padding: 12rem 0  8rem;
+        padding: 10rem 0  6rem;
     }
 
     #picture {
@@ -116,18 +128,88 @@
         margin: 8rem 0 12rem;
     }
 
-    #infos__title {
+    .infos__title__left, .infos__title__right {
         padding-left: 10rem;
     }
-    #infos__title::after {
+    .infos__title__left::after {
+        height: 4px;
+    }
+    .infos__title__right::after {
         height: 4px;
     }
 
-    #infos__text {
+    .infos__text__left, .infos__text__right {
         padding: 0 10rem;
     }
     
-    #info__languages {
+    .info__languages__left, .info__languages__right {
         padding: 1.5rem 10rem;
     }
 }
+
+/* Responsive tablet +1024px ==================================== */
+@media only screen and (min-width : 1024px) {
+    .title {
+        font-size: 4vw;
+    }
+
+    .subtitle {
+        font-size: 2vw;
+    }
+
+    /* left part ----------------------- */
+    .project__left {
+        flex-direction: row;
+    }
+
+    .infos__title__left {
+        font-size: 2.5vw;
+    }
+    .infos__title__left::after {
+        height: 4px;
+    }
+
+    .infos__text__left {
+        font-size: 1.5vw;
+        line-height: 1;
+    }
+    
+    .info__languages__left {
+        font-size: 1.5vw;
+        line-height: 1;
+    }
+
+    /* right part ----------------------- */
+    .project__right {
+        flex-direction: row-reverse;
+    }
+
+    .infos__right {
+        text-align: right;
+    }
+
+    .infos__title__right {
+        font-size: 2.5vw;
+        padding-left: 0;
+        padding-right: 10rem;
+    }
+    .infos__title__right::after {
+        height: 4px;
+    }
+
+    .infos__text__right {
+        font-size: 1.5vw;
+        line-height: 1;
+    }
+    
+    .info__languages__right {
+        font-size: 1.5vw;
+        line-height: 1;
+    }
+
+    /* #picture {
+        background-color: var(--color-white);
+        background-size: 60%;
+    } */
+}
+
