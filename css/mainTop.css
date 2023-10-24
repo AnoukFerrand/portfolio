@@ -360,6 +360,7 @@ section {
         text-decoration: none;
         background: linear-gradient(to top, var(--color1) 100%, var(--color1) 30px, transparent 5px) no-repeat;
         background-size: 100% 100%;
+        z-index: 0;
     }
     .third:hover {
         animation: background-size 0.5s ease-in-out forwards;
