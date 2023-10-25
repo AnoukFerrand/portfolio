@@ -62,6 +62,8 @@
 .picture__left, .picture__right {
     padding: 4rem;
 }
+
+
 /* test to put a background special*/
 /* #project::after {
     content: '';
@@ -171,6 +173,7 @@
     }
     /* left part ----------------------- */
     .project__left {
+        width: 100%;
         flex-direction: row;
         justify-content: flex-end;
     }
@@ -180,9 +183,8 @@
         /* padding: 8rem 9rem 8rem 15rem; */
         padding: 0;
         padding-right: 4rem;
-    }
-
-    #infos {
+        }
+    .infos__left {
         margin: 0;
         margin-left: 6rem;
     }
@@ -191,16 +193,15 @@
     }
 
     .infos__title__left {
-        font-size: 2vw;
+        font-size: 1.8vw;
         padding-left: 0;
-
     }
     .infos__title__left::after {
         height: 4px;
     }
 
     .infos__text__left {
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         line-height: 1.2;
         margin: 0;
         margin-right: 12rem;
@@ -210,9 +211,9 @@
         /* margin-right: 7rem;
         padding-left: 0; */
     }
-    
+
     .info__languages__left {
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         line-height: 1.2;
         margin: 0;
         margin-right: 12rem;
@@ -225,15 +226,20 @@
     /* right part ----------------------- */
     .project__right {
         flex-direction: row-reverse;
+        justify-content: flex-end;
     }
 
     .picture__right {
-        padding: 8rem 15rem 8rem 9rem;
-
-    }
+        width: 50%;
+        /* padding: 8rem 9rem 8rem 15rem; */
+        padding: 0;
+        padding-left: 4rem;    }
 
     .infos__right {
         text-align: right;
+        width: 50%;
+        margin: 0;
+        margin-left: 6rem;
     }
 
     .infos__title__right {
@@ -249,7 +255,6 @@
         line-height: 1.2;
         margin-left: 10rem;
         padding-right: 0;
-
     }
     
     .info__languages__right {
@@ -257,8 +262,6 @@
         line-height: 1.2;
         padding-right: 0;
         margin-left: 10rem;
-
-
     }
 
     #picture {
