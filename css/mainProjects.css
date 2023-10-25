@@ -169,8 +169,18 @@
         background-color: var(--color-white);
     }
 
+
+    #project::before {
+        background-color: var(--color3);
+        width: 100%;
+        height: 100%;
+    }
     #project {
         margin-bottom: 6rem;
+    }
+    #project:hover {  /* faire une animation pour que se soit smooth !!!! */
+        scale: 1,2;
+        rotate: -5deg; 
     }
 
     /* left part ----------------------- */
@@ -183,9 +193,10 @@
     .picture__left {
         width: 50%;
         padding: 0;
-        padding-right: 4rem;
+        padding-right: 8rem;
         }
     .infos__left {
+        width: 50%;
         margin: 0;
         margin-left: 6rem;
     }
