@@ -61,6 +61,7 @@ footer {
 }
 #media:hover {
     background-color: var(--color1);
+    border: solid 2px var(--color2);
 }
 
 .signature {
@@ -89,4 +90,41 @@ footer {
     footer {
         padding: 10rem 2rem 7rem;
     }
+}
+
+/* Responsive desktop +1024px ==================================== */
+@media only screen and (min-width : 1024px) {
+    .main__contact {
+margin-top: 10rem;    }
+    .contact__title {
+        font-size: 4vw;
+        font-weight: 560;
+        margin-bottom: 3rem;
+    }
+
+    .contact__infos {
+        font-size: 1.8vw;
+        padding: 0 4rem;
+        line-height: 1.5;
+        letter-spacing: 2px;
+    }
+
+    footer {
+        padding: 17rem 4rem 12rem;
+    }
+
+    #media {
+        font-size: 1.8vw;
+    }
+
+    .social__media {
+        justify-content: center;
+        padding: 4rem;
+    }
+
+    .signed {
+        font-size: 1.2vw;
+        padding-top: 4rem;
+
+    }   
 }
