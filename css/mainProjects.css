@@ -2,7 +2,7 @@
 
 .projects__title {
     color: var(--text-color);
-    padding: 4rem 0;
+    margin: 4rem 0;
     text-align: center;
 }
 
@@ -104,7 +104,7 @@
 /* Responsive tablet +768px ==================================== */
 @media only screen and (min-width : 768px) {
     .projects__title {
-        padding: 10rem 0  6rem;
+        margin: 10rem 0  6rem;
     }
 
     .picture__left, .picture__right {
@@ -138,7 +138,7 @@
 @media only screen and (min-width : 1024px) {
 
     .projects__title {
-        padding: 12rem 0  8rem;
+        margin: 12rem 0  8rem;
     }
 
     .title {

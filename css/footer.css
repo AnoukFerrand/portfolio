@@ -52,7 +52,6 @@ footer {
 }
 
 #media {
-    /* width: 100%; */
     margin: 0 2rem;
     padding: 1.5rem 2.5rem;
     background-color: var(--color2);
@@ -126,6 +125,5 @@ margin-top: 10rem;    }
     .signed {
         font-size: 1.2vw;
         padding-top: 4rem;
-
     }   
 }
