@@ -1,9 +1,5 @@
 /* Main section projects Design =========================================== */
 
-/* .main__projects {
-    margin: 0 20rem;
-} */
-
 .projects__title {
     color: var(--text-color);
     padding: 4rem 0;
@@ -61,20 +57,6 @@
 .picture__left, .picture__right {
     padding: 4rem;
 }
-
-
-/* test to put a background special*/
-/* #project::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0;
-    width: 83%;
-    height: 40%;
-    background: var(--color2);
-    z-index: -1;
-    align-items: right;
-} */
 
 .infos__left, .infos__right {
     width: 100%;
@@ -174,12 +156,6 @@
     #picture {
         width: 30vw;
         background-color: transparent;
-    }
-
-    #img__project__link {
-        /* max-width: 250px; */
-        /* min-width: 430px; */
-
     }
 
     #img__project {
