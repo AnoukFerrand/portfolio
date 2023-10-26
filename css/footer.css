@@ -57,6 +57,7 @@ footer {
     padding: 1.5rem 2.5rem;
     background-color: var(--color2);
     border-radius: 10px;
+    border: solid 2px var(--color2);
     font-size: 4.5vw;
 }
 #media:hover {
@@ -110,7 +111,7 @@ margin-top: 10rem;    }
     }
 
     footer {
-        padding: 17rem 4rem 12rem;
+        padding: 13rem 4rem 10rem;
     }
 
     #media {
@@ -119,7 +120,7 @@ margin-top: 10rem;    }
 
     .social__media {
         justify-content: center;
-        padding: 4rem;
+        padding: 0;
     }
 
     .signed {
