@@ -44,14 +44,7 @@
     width: 100%;
     height: auto;
 }
-#shadow__img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 16px 10px rgba(0, 0, 0, 0.1);
-    background-color: var(--color3);
-}
+
 #img__project {
     position: relative;
     width: 100%;
@@ -137,7 +130,7 @@
     }
 
     #infos {
-        margin: 8rem 0 12rem;
+        margin: 8rem 0;
     }
 
     .infos__title__left, .infos__title__right {
@@ -171,24 +164,21 @@
     }
     
     #project {
-        margin-bottom: 6rem;
+        margin-bottom: 10rem;
     }
 
-
     #picture {
-        max-width: 450px; /* LE COMPORTEMENT N4ES TPAS OK A REVOIR §§§§§§§§§§§§§§ */ 
+        max-width: 450px;
         background-color: transparent;
     }
 
     #img__project {
-        /* transition: all 0.5s ease-in-out; */
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.3s ease-in-out;
         filter: grayscale(100%);
-
     }
-    #img__project:hover {  /* faire une animation pour que se soit smooth !!!! */
+    #img__project:hover {  
         filter: grayscale(0);
-        transform: scale(1.1) rotate(-5deg); 
+        transform: translate(0, -25px);
     }
 
     /* left part ----------------------- */
@@ -205,22 +195,15 @@
         left: 0;
         bottom: 0;
         width: 83%;
-        height: 60%;
+        height: 58.5%;
         background-color: var(--color1);
         z-index: -1;
     }
 
     .picture__left {
-        width: 50%;
-        padding: 0;
-        /* padding-right: 8rem; */
         padding: 5rem 7rem 5rem 3rem;
-        }
-    .infos__left {
-        width: 50%;
-        margin: 0;
-        margin-left: 6rem;
     }
+
     .infos__left {
         width: 50%;
     }
@@ -252,25 +235,33 @@
 
     /* right part ----------------------- */
     .project__right {
+        position: relative;
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
+    .project__right::after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 83%;
+        height: 58.5%;
+        background-color: var(--color1);
+        z-index: -1;
+    }
 
     .picture__right {
-        width: 50%;
-        /* padding: 8rem 9rem 8rem 15rem; */
-        padding: 0;
-        padding-left: 4rem;    }
+        padding: 5rem 3rem 5rem 7rem;
+        }
 
     .infos__right {
         text-align: right;
         width: 50%;
-        margin: 0;
-        margin-left: 6rem;
     }
 
     .infos__title__right {
-        font-size: 2vw;
+        font-size: 1.8vw;
         padding-left: 0;
     }
     .infos__title__right::after {
@@ -278,17 +269,17 @@
     }
 
     .infos__text__right {
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         line-height: 1.2;
-        margin-left: 10rem;
-        padding-right: 0;
+        margin-left: 12rem;
+        padding: 2rem 0;
     }
     
     .info__languages__right {
-        font-size: 1.5vw;
+        font-size: 1.3vw;
         line-height: 1.2;
-        padding-right: 0;
-        margin-left: 10rem;
+        margin-left: 12rem;
+        padding: 2rem 0;
     }
 
 }
