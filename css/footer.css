@@ -7,13 +7,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color3);
+    background-color: var(--color2);
     padding: 2rem 2.5rem;
 }
 
 .contact__title {
     font-family: var(--text-font-title);
-    color: var(--text-color-light);
+    color: var(--text-color);
     font-size: 8.5vw;
     font-weight: 560;
     margin-bottom: 1.5rem;
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--text-color-light);
+    color: var(--text-color);
     font-size: 4.5vw;
     padding: 0 4rem;
     line-height: 1.7;
@@ -54,14 +54,15 @@ footer {
 #media {
     margin: 0 2rem;
     padding: 1.5rem 2.5rem;
-    background-color: var(--color2);
+    background-color: var(--color1);
     border-radius: 10px;
-    border: solid 2px var(--color2);
+    border: solid 2px var(--color1);
     font-size: 4.5vw;
 }
 #media:hover {
-    background-color: var(--color1);
-    border: solid 2px var(--color2);
+    background-color: var(--color-details);
+    border: solid 2px var(--color1);
+    color: var(--text-color-light);
 }
 
 .signature {

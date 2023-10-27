@@ -75,7 +75,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    background: var(--color3);
+    background: var(--color-details);
     margin-top: 0.2rem;
 }
 .infos__title__right::after {
@@ -83,7 +83,7 @@
     display: block;
     width: 100%;
     height: 2px;
-    background: var(--color3);
+    background: var(--color-details);
     margin-top: 0.2rem;
 }
 
