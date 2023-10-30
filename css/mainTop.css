@@ -18,6 +18,10 @@ section {
     background-color: var(--color1);
 }
 
+.home__social__media {
+    display: none;
+}
+
 .home__right {
     width: 100%;
     display: flex;
@@ -187,12 +191,21 @@ section {
         padding-top: 6rem;
         /* display: flex;               !!!!!Display flex permet de centrer la photo en grand écran, mais le 1024 la déforme !!!!!
         justify-content: center; */      
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .home__left__infos {
+        padding: 0; 
     }
 
     .cv {
         padding: 7rem;
-        top: -3rem;
-        right: 14rem;
+        right: 13rem;
+        top: 4rem;
+        /* right: 14rem; */
         border: solid 5px var(--color-white);
 
     }
@@ -204,7 +217,8 @@ section {
         height: 400px;
         width: 400px;
         position: relative;
-        top: -12rem;
+        top: -5rem;
+        /* top: -12rem; */
         /* Animation profil picture */
         background-image: url(../assets/PhotoOrange.jpg);
     }
@@ -224,6 +238,25 @@ section {
         mask-image: radial-gradient(var(--profil-img-size) at var(--profil-img-x) var(--profil-img-y), transparent 25%, black 70%);
         -webkit-mask-repeat: no-repeat no-repeat;
         -webkit-mask-image: radial-gradient(var(--profil-img-size) at var(--profil-img-x) var(--profil-img-y), transparent 25%, black 70%);   
+    }
+
+    .home__social__media {
+        display: flex;
+        justify-content: center;
+        /* width: 20px; */
+    }
+
+    #home__media {
+        width: 70px;
+        height: 70px;
+        margin: 0 1.5rem;
+    }
+    #home__media svg {
+        fill: var(--color4);
+
+    }
+    #home__media:hover svg {
+        fill: var(--color-details);
     }
 
     /* Right part ------------------------------------ */
