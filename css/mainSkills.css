@@ -123,9 +123,9 @@
 
     #skills__list {
         padding: 3.5rem 0;
-        transition-property: background;
+        /* transition-property: background;
         transition-duration: 0.6s;
-        transition-timing-function: linear;
+        transition-timing-function: linear;     !!!!!!  A voir pour la transition !!!!!!!           */   
         }
     #skills__list:hover {
         background-color: var(--color2);
