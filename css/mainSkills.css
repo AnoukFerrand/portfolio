@@ -31,13 +31,15 @@
 #skills__list {
     width: 100%;
     text-align: center;
+    margin: 6rem 0 6rem 0;
+
 }
 
 #list__title {
     position: relative;
     width: 100%;
     font-size: 17px;
-    padding: 4.5rem 0 1rem 0;
+    /* padding: 4.5rem 0 1rem 0; */
 }
 #list__title::after {
     content: '';
@@ -70,8 +72,8 @@
 
 #list__names {
     color: var(--text-color);
-    font-size: 15px;
-    font-weight: 560;
+    font-size: 17px;
+    font-weight: 600;
     margin-top: 0.5rem;
 }
 
