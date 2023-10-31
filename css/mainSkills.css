@@ -127,31 +127,12 @@
         padding-right: 0;
     }
 
-    /* .skills__all {
-        width: 93vw;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: flex-start;
-        margin-top: 7rem;
-        margin: auto;
-        align-content: space-between;
-    } */
-
     #skills__list {
-        padding: 3.5rem 0;
-        /* transition-property: background;
-        transition-duration: 0.6s;
-        transition-timing-function: linear;     !!!!!!  A voir pour la transition !!!!!!!           */   
+        margin: 6rem 0 6rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         }
-    #skills__list:hover {
-        background-color: var(--color2);
-        color: var(--color-white);
-        }
-    #skills__list:hover span {
-        color: var(--color-white);
-    }
 
     .skills__title {
         font-size: 4vw;
@@ -160,14 +141,13 @@
 
     #list__title {
         font-size: 2.5rem;
-        padding: 0; 
-    }
-    #list__title::after {
-        content: none;
+        padding: 0;
+        width: 200px;
+        text-align: center;
     }
 
     #list {
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
     #list__items {
@@ -175,9 +155,6 @@
         margin: 0 3rem;
         border: none;
     } 
-    #list__items:hover svg {
-        fill: var(--color-white);
-    }
 
     #list__names {
         font-size: 2.3rem;
