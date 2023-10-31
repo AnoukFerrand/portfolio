@@ -45,7 +45,7 @@
     position: absolute;
     width: 100%;
     height: 2px;
-    background: var(--color-details);
+    background: var(--color2);
     margin: 1rem 0;
 }
 
@@ -72,7 +72,23 @@
     color: var(--text-color);
     font-size: 15px;
     font-weight: 560;
-    /* margin-top: 1.2rem; */
+    margin-top: 0.5rem;
+}
+
+.php svg {
+    width: 65px;
+    margin: -2.5px 0;
+}
+.sql svg {
+    width: 53px;
+    margin: 3.5px 0;
+}
+.api svg {
+    margin: 6px 0;
+}
+.mvc svg {
+    width: 53px;
+    margin: 7px 0;
 }
 
 /* Responsive tablet +768px ==================================== */
@@ -157,6 +173,9 @@
         margin: 0 3rem;
         border: none;
     } 
+    #list__items:hover svg {
+        fill: var(--color-white);
+    }
 
     #list__names {
         font-size: 2.3rem;
