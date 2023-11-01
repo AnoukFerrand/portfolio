@@ -250,6 +250,7 @@ section {
     .home__social__media {
         display: flex;
         justify-content: center;
+        margin-bottom: 10rem;
         /* width: 20px; */
     }
 
@@ -296,7 +297,7 @@ section {
     /* Main section top__about Design =========================================== */
 
     .main__top__about {
-        height: 92vh;
+        height: 110vh;
         padding: 0;
         /* margin: 0 10rem; */
     }
@@ -305,7 +306,7 @@ section {
         position: relative;
         font-size: 1.5vw;
         padding: 14rem;
-        margin: 20rem;
+        margin: 35rem;
     }
 
     .about p::before {

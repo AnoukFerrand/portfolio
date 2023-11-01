@@ -138,11 +138,12 @@
 @media only screen and (min-width : 1024px) {
 
     .projects__title {
-        margin: 12rem 0  8rem;
+        margin: 17rem 0  10rem;
     }
 
     .title {
         font-size: 4vw;
+        /* margin: 3rem 0; */
     }
 
     .subtitle {
@@ -154,7 +155,7 @@
     }
 
     #picture {
-        width: 30vw;
+        width: 25vw;
         background-color: transparent;
     }
 
@@ -180,7 +181,7 @@
         position: absolute;
         left: 0;
         bottom: 0;
-        width: 83%;
+        width: 77%;
         height: 58.5%;
         background-color: var(--color1);
         z-index: -1;
@@ -195,7 +196,7 @@
     }
 
     .infos__title__left {
-        font-size: 1.8vw;
+        font-size: 1.7vw;
         padding-left: 0;
     }
     .infos__title__left::after {
@@ -203,19 +204,19 @@
     }
 
     .infos__text__left {
-        font-size: 1.3vw;
+        font-size: 1.1vw;
         line-height: 1.2;
         margin: 0;
-        margin-right: 12rem;
+        margin-right: 25rem;
         padding: 0;
         padding: 2rem 0;
     }
 
     .info__languages__left {
-        font-size: 1.3vw;
+        font-size: 1.1vw;
         line-height: 1.2;
         margin: 0;
-        margin-right: 12rem;
+        margin-right: 25rem;
         padding: 0;
     }
 
@@ -231,7 +232,7 @@
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 83%;
+        width: 77%;
         height: 58.5%;
         background-color: var(--color1);
         z-index: -1;
@@ -247,7 +248,7 @@
     }
 
     .infos__title__right {
-        font-size: 1.8vw;
+        font-size: 1.7vw;
         padding-left: 0;
     }
     .infos__title__right::after {
@@ -255,16 +256,16 @@
     }
 
     .infos__text__right {
-        font-size: 1.3vw;
+        font-size: 1.1vw;
         line-height: 1.2;
-        margin-left: 12rem;
+        margin-left: 25rem;
         padding: 2rem 0;
     }
     
     .info__languages__right {
-        font-size: 1.3vw;
+        font-size: 1.1vw;
         line-height: 1.2;
-        margin-left: 12rem;
+        margin-left: 25rem;
         padding: 2rem 0;
     }
 

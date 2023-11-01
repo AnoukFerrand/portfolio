@@ -81,7 +81,7 @@ footer {
 /* Responsive tablet +768px ==================================== */
 @media only screen and (min-width : 768px) {
     .main__contact {
-        padding: 10rem 6rem;
+        padding: 12rem 6rem;
     }
 
     .social__media {
@@ -96,17 +96,19 @@ footer {
 /* Responsive desktop +1024px ==================================== */
 @media only screen and (min-width : 1024px) {
     .main__contact {
-margin-top: 10rem;    }
+        margin-top: 10rem;
+    }
+
     .contact__title {
         font-size: 4vw;
         font-weight: 560;
-        margin-bottom: 3rem;
+        margin-bottom: 5.5rem;
     }
 
     .contact__infos {
-        font-size: 1.8vw;
+        font-size: 1.6vw;
         padding: 0 4rem;
-        line-height: 1.5;
+        line-height: 1.8;
         letter-spacing: 2px;
     }
 
