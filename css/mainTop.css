@@ -174,9 +174,9 @@ section {
     stroke-dashoffset: 0;
     stroke-linecap: round;
     position: absolute;
-    rotate: -20deg;
-    top: 20%;
-    left: 70%;
+    rotate: 20deg;
+    top: 95%;
+    left: 20%;
     opacity: 1;
     width: calc(100% + 5px);
     transform: translate(-50%, -50%);

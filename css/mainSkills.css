@@ -179,7 +179,6 @@
     .skills__title {
         font-size: 4vw;
         margin: 15rem 0 6rem;
-        /* margin-bottom: 4rem; */
     }
 
     .skills__all {
@@ -213,9 +212,11 @@
             stroke-dashoffset: 338;
             stroke-width: 4px;
             opacity: 0;
+            top: 80%;
+            left: 50%;
             rotate: +13deg;
             width: calc(100% - 72rem);
-            transform: translate(-56%, -24%);
+            transform: translate(-50%, -50%);
     }
     .web__list:hover #js__heart{
         stroke-dashoffset: 0;
