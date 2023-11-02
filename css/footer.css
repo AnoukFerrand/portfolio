@@ -81,6 +81,7 @@ footer {
 
 /* Responsive tablet +768px ==================================== */
 @media only screen and (min-width : 768px) {
+
     .main__contact {
         padding: 12rem 6rem;
     }
@@ -96,6 +97,7 @@ footer {
 
 /* Responsive desktop +1024px ==================================== */
 @media only screen and (min-width : 1024px) {
+    
     .main__contact {
         margin-top: 10rem;
     }

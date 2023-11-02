@@ -95,18 +95,19 @@
 
 /* Responsive tablet +768px ==================================== */
 @media only screen and (min-width : 768px) {
-    
-.menu__link {
-    padding: 3rem;
-}
 
-.menu__links ul {
-    margin-top: 8rem;
-}
+    .menu__link {
+        padding: 3rem;
+    }
+
+    .menu__links ul {
+        margin-top: 8rem;
+    }
 }
 
 /* Responsive mobile +1024px --------------------------------------- */
 @media only screen and (min-width : 1024px) {
+
     #openBtn {
         display: none;
     }
@@ -117,6 +118,7 @@
     .container__logo:hover {
         animation: rotation 0.2s linear infinite;
     }
+
     @keyframes rotation {
         from {
             transform: rotate(0deg);
@@ -158,7 +160,6 @@
         margin: 0 3rem 0 3rem;
         transition: none;
         border-bottom: none;
-
     }
 
     /* Animation hand drawing circle navbar */

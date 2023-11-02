@@ -104,6 +104,7 @@
 
 /* Responsive tablet +768px ==================================== */
 @media only screen and (min-width : 768px) {
+
     .projects__title {
         margin: 10rem 0  6rem;
     }
@@ -144,7 +145,6 @@
 
     .title {
         font-size: 4vw;
-        /* margin: 3rem 0; */
     }
 
     .subtitle {
@@ -269,5 +269,4 @@
         margin-left: 25rem;
         padding: 2rem 0;
     }
-
 }

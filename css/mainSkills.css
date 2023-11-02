@@ -1,27 +1,20 @@
 /* Main section skills Design =========================================== */
 
 .main__skills {
-    /* height: 144vh;
-    width: 100%; */
     background-color: var(--color1);
     padding: 4rem 4rem 6rem 4rem;
 }
 
 .skills__title {
-    /* position: absolute; */
     color: var(--text-color);
     font-family: var(--text-font-title);
     font-size: 8.5vw;
     font-weight: 560;
-    /* padding: 2rem 0; */
     text-align: center;
     margin: 7rem 0 2rem;
-
 }
 
-
 .skills__all {
-    /* position: absolute; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -35,14 +28,12 @@
     width: 100%;
     text-align: center;
     margin: 6rem 0 6rem 0;
-
 }
 
 #list__title {
     position: relative;
     width: 100%;
     font-size: 17px;
-    /* padding: 4.5rem 0 1rem 0; */
 }
 #list__title::after {
     content: '';
@@ -65,14 +56,12 @@
 }
 
 #list__items {
-    /* display: none; */
     display: flex;
     flex-direction: column; 
     align-items: center;
     width: 50px;
     margin: 15px 20px 0 20px;
     z-index: 5;
-
 } 
 
 #list__names {
@@ -85,7 +74,6 @@
 .web__list {
     position: relative;
 }
-
 
 #js__heart {
     display: block;
@@ -158,7 +146,6 @@
         rotate: +13deg;
         width: calc(100% - 65rem);
         transform: translate(-50%, -50%);}
-
 }
 
 /* Responsive desktop +1024px ==================================== */
