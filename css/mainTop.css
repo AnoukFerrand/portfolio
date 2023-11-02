@@ -18,10 +18,6 @@ section {
     background-color: var(--color1);
 }
 
-.home__social__media {
-    display: none;
-}
-
 .home__right {
     width: 100%;
     display: flex;
@@ -34,7 +30,7 @@ section {
 /* Left part ------------------------------------ */
 
 .home__left__infos {
-    padding: 8rem 0;
+    padding: 8rem 0 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -72,10 +68,29 @@ section {
     transition: transform .3s ease-in-out;
 }
 
+.home__social__media {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6rem;
+}
+
+#home__media {
+    width: 40px;
+    height: 40px;
+    margin: 0 0.8rem;
+}
+#home__media svg {
+    fill: var(--color4);
+
+}
+#home__media:hover svg {
+    fill: var(--color-details);
+}
+
 /* Right part ------------------------------------ */
 
 .home__right__infos {
-    padding: 8rem 0;
+    padding: 12rem 0;
 }
 .name {
     font-family: var(--text-font-title);
@@ -89,6 +104,7 @@ section {
     font-family: var(--text-font);
     font-size: 4.15vw;
     color: var(--text-color);
+    margin-bottom: 2rem
 }
 
 /* Main section top__about Design =========================================== */
@@ -97,7 +113,7 @@ section {
     min-height: 30vh;
     display: flex;
     align-items: center;
-    padding: 4rem;
+    padding: 12rem 4rem;
 }
 
 .about {
@@ -173,6 +189,17 @@ section {
     .main__top__about {
         padding: 9rem;
     }
+
+    .profil {
+        height: 280px;
+        width: 280px;
+    }
+
+    #home__media {
+        width: 50px;
+        height: 50px;
+        margin: 1.5rem 0.8rem 0;
+    }
 }
 
 /* Responsive mobile +1024px ==================================== */
@@ -247,11 +274,11 @@ section {
         -webkit-mask-image: radial-gradient(var(--profil-img-size) at var(--profil-img-x) var(--profil-img-y), transparent 25%, black 70%);   
     }
 
-    .home__social__media {
+    /* .home__social__media {
         display: flex;
         justify-content: center;
         margin-bottom: 10rem;
-        /* width: 20px; */
+        width: 20px;
     }
 
     #home__media {
@@ -265,7 +292,7 @@ section {
     }
     #home__media:hover svg {
         fill: var(--color-details);
-    }
+    } */
 
     /* Right part ------------------------------------ */
 

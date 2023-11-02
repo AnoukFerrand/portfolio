@@ -2,7 +2,7 @@
 
 .projects__title {
     color: var(--text-color);
-    margin: 4rem 0;
+    margin: 12rem 0 6rem;
     text-align: center;
 }
 
@@ -32,6 +32,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 10rem;
 }
 
 #img__project__link {
