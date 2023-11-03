@@ -230,9 +230,9 @@ section {
     }
 
     .cv {
-        padding: 7rem;
-        right: 17rem;
-        top: 6rem;
+        padding: 5rem;
+        right: 14rem;
+        top: 4rem;
         border: solid 5px var(--color-white);
     }
     .cv:hover {
@@ -245,8 +245,8 @@ section {
     }
     
     .profil {
-        height: 400px;
-        width: 400px;
+        height: 310px;
+        width: 310px;
         position: relative;
         top: -5rem;
         background-image: url(../assets/PhotoOrange.jpg);
@@ -300,7 +300,7 @@ section {
         position: relative;
         font-size: 1.5vw;
         padding: 14rem;
-        margin: 35rem;
+        margin: 15rem 35rem;
     }
 
     .about p::before {
