@@ -45,24 +45,3 @@ function profilPictureMouseEffect() {
         }
     });
 }
-
-// test animation responsive mobile ==============================================
-// Animation about me paragraphe
-function textAboutMeScrollEffect() { 
-    let about = document.querySelector('.about');
-    let firstSpan = document.querySelector('.first');
-    console.log(firstSpan);
-
-    for (let i = 0; i < firstSpan.length; i++) {
-        let windowHeight = window.innerHeight;
-        let elementTop = firstSpan[i].getBoundingClientRect().top;
-        let elementVisible = 150;
-        if (elementTop < windowHeight - elementVisible) {
-            firstSpan[i].classList.add("active");
-        } else {
-            firstSpan[i].classList.remove("active");
-        }  
-    }
-    window.addEventListener("scroll", textAboutMeScrollEffect);
-
-}

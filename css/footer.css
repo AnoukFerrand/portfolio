@@ -62,7 +62,7 @@ footer {
 }
 #media:hover {
     background-color: var(--color-details);
-    border: solid 2px var(--color1);
+    border: solid 2px var(--color-details);
     color: var(--text-color-light);
 }
 
