@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     let menu__links = document.querySelector('#menu__links__burger');
     let openBtn = document.querySelector('#openBtn');
     let closeBtn = document.querySelector('#closeBtn');
+    let menuLinks = document.querySelectorAll('.scroll__js');
+    // let navbarLinks = document.querySelectorAll('.scroll__js');
+
 
     // menu burger animation
     openBtn.addEventListener('click', () => {
@@ -12,6 +15,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
     closeBtn.addEventListener('click', () => {
         menu__links.classList.remove('active');
     });
+
+    menuLinks.forEach((link) => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            document.querySelector(e.currentTarget.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });        
+    });
+console.log(menuLinks);
 
     // Call Animation profil picture
     profilPictureMouseEffect();
@@ -45,3 +58,4 @@ function profilPictureMouseEffect() {
         }
     });
 }
+
