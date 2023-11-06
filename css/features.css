@@ -33,7 +33,7 @@ display: none;
 
     .m-scroll__title > div {
         display: flex;
-        animation: scrollText 30s infinite linear;
+        animation: scrollText 35s infinite linear;
     }
 
     .m-scroll__title span {
@@ -53,7 +53,7 @@ display: none;
         -webkit-text-stroke: 1px white;
         color: transparent;
     }
-    
+
     @keyframes scrollText {
         from {
             transform: translateX(0%);
