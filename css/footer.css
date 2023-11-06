@@ -116,7 +116,7 @@ footer {
     }
 
     footer {
-        padding: 13rem 4rem 10rem;
+        padding: 13rem 4rem 3rem;
     }
 
     #media {
@@ -130,6 +130,6 @@ footer {
 
     .signed {
         font-size: 1.2vw;
-        padding-top: 4rem;
+        padding-top: 2rem;
     }   
 }
