@@ -263,7 +263,7 @@ section {
     }
 }
 
-/* Responsive mobile +1024px ==================================== */
+/* Responsive tablet +1024px ==================================== */
 @media only screen and (min-width : 1024px) {
     .main__top {
         display: flex;
@@ -336,7 +336,13 @@ section {
     /* Right part ------------------------------------ */
 
     .home__right {
-        padding-top: 6rem;
+        /* padding-top: 6rem; */
+        flex-direction: column;
+    }
+
+    .switch__text {
+        font-size: 2.05vw;
+        /* margin-right: 20px; */
     }
 
     .name {
@@ -358,7 +364,7 @@ section {
         position: relative;
         font-size: 1.5vw;
         padding: 14rem;
-        margin: 15rem 35rem;
+        margin: 5rem 15rem;
     }
 
     .about p::before {
