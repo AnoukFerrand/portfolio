@@ -9,24 +9,28 @@
 
 /* switch button to webdesigner website =========================================================*/
 
+/* Rajouter : Onscroll le text disparait et seul le bouton reste */
+
 .switch {
-    /* width: 100%; */
+    position: fixed;
+    top: 80px;
+    right: 35px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: 9rem;
 }
 .switch__text {
     font-family: var(--text-font);
     font-size: 3.5vw;
     color: var(--text-color);
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .switch__wrap {
     display: inline-block;
     position: relative;
-    width: 50px;
-    height: 30px;
+    width: 35px;
+    height: 20px;
     cursor: pointer;
     overflow: hidden;
 }
@@ -43,7 +47,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: var(--color1);
+    background: var(--color-details);
     border-radius: 20px;
 }
 /* .switch input:checked + span {
@@ -55,9 +59,9 @@
     position: absolute;
     top: 50%;
     left: 4px;
-    width: 22px;
-    height: 22px;
-    background: var(--color-details);
+    width: 12px;
+    height: 12px;
+    background: var(--color1);
     border-radius: 50%;
     transform: translateY(-50%);
     transition: all .5s;
@@ -133,14 +137,14 @@
 
     .switch {
         /* width: 100%; */
-        display: flex;
+        /* display: flex;
         align-items: center;
-        justify-content: flex-end;
-        margin-bottom: 2rem;
-        margin-left: 35rem;
+        justify-content: flex-end; */
+        /* margin-bottom: 2rem;
+        margin-left: 35rem; */
     }
     .switch__text {
-        font-size: 1.5vw;
+        /* font-size: 1.5vw; */
         /* margin-right: 20px; */
     }
 
