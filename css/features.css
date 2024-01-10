@@ -5,9 +5,74 @@
 .m-scroll {
     display: none;
     }
+
+
+/* switch button to webdesigner website =========================================================*/
+
+.switch {
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 9rem;
+}
+.switch__text {
+    font-family: var(--text-font);
+    font-size: 3.5vw;
+    color: var(--text-color);
+    margin-right: 20px;
+}
+.switch__wrap {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.switch__wrap input {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: 0;
+    height: 0;
+}
+.switch__wrap input + span {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--color1);
+    border-radius: 20px;
+}
+/* .switch input:checked + span {
+    background: #346abf;
+} */
+.switch__wrap input + span:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    width: 22px;
+    height: 22px;
+    background: var(--color-details);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: all .5s;
+}
+.switch__wrap input:checked + span:before {
+    left: 24px;
+}
+
+
     
     /* Responsive mobile +1024px ---------------------------------- */
     @media only screen and (min-width: 1024px) {
+
+        /* scrolling text mainTop =========================================================*/
+
         .m-scroll {
             position: absolute;
             display: flex;
@@ -63,3 +128,20 @@
             }
         }
     }
+
+    /* switch button to webdesigner website =========================================================*/
+
+    .switch {
+        /* width: 100%; */
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+        margin-left: 35rem;
+    }
+    .switch__text {
+        font-size: 1.5vw;
+        /* margin-right: 20px; */
+    }
+
+    
