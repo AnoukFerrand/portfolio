@@ -136,6 +136,8 @@
     /* switch button to webdesigner website =========================================================*/
 
     .switch {
+        visibility: hidden; 
+        /* A ENLEVER POUR CONTINUER */
         /* width: 100%; */
         /* display: flex;
         align-items: center;
