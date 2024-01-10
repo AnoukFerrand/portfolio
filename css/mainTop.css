@@ -341,7 +341,7 @@ section {
     }
 
     .switch__text {
-        font-size: 2.05vw;
+        font-size: 2.5vw;
         /* margin-right: 20px; */
     }
 
@@ -362,9 +362,9 @@ section {
 
     .about p {
         position: relative;
-        font-size: 1.5vw;
+        font-size: 2.5vw;
         padding: 14rem;
-        margin: 5rem 15rem;
+        margin: 2rem 10rem;
     }
 
     .about p::before {
