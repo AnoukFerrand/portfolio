@@ -353,19 +353,19 @@ section {
         font-size: 2.05vw;
     }
 
-    /* Main section top__about Design =========================================== */
+/* Main section top__about Design =========================================== */
 
-    .main__top__about {
-        height: 110vh;
-        padding: 0;
-    }
+.main__top__about {
+    height: 110vh;
+    padding: 0;
+}
 
-    .about p {
-        position: relative;
-        font-size: 2.5vw;
-        padding: 14rem;
-        margin: 2rem 10rem;
-    }
+.about p {
+    position: relative;
+    font-size: 1.5vw;
+    padding: 14rem;
+    margin: 15rem 35rem;
+}
 
     .about p::before {
         content: '';
