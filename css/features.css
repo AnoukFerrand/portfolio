@@ -67,7 +67,7 @@
     transition: all .5s;
 }
 .switch__wrap input:checked + span:before {
-    left: 24px;
+    left: 18px;
 }
 
 
@@ -131,12 +131,30 @@
                 transform: translateX(-50%);
             }
         }
+
+        /* switch button to webdesigner website =========================================================*/
+        .switch__wrap {
+            width: 55px;
+            height: 30px;
+
+        }
+        .switch__text {
+            font-size: 2vw;
+            margin-right: 20px;
+        }
+        .switch__wrap input + span:before {
+            width: 20px;
+            height:20px;
+        }
+        .switch__wrap input:checked + span:before {
+            left: 30px;
+        }
     }
 
-    /* switch button to webdesigner website =========================================================*/
 
     .switch {
-        visibility: hidden; 
+        display: none;
+        /* visibility: hidden;  */
         /* A ENLEVER POUR CONTINUER */
         /* width: 100%; */
         /* display: flex;

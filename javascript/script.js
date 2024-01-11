@@ -59,3 +59,19 @@ function profilPictureMouseEffect() {
     });
 }
 
+// Switch button hiden on scroll
+function isVisible(e) {
+    let WH = $(window).height(), // Viewport height
+      WS = $(window).scrollTop(), // Scroll top
+      EH = $(e).height(), // Element height
+      EOT = $(e).offset().top; // Element offset top
+    return (EOT < (WH + WS - EH));
+}
+
+$(window).scroll(function() {
+    if (isVisible('.cv')) {
+        $('.switch__text').fadeIn(5); // fadeIn() fait réapparaître la classe
+    } else {
+        $('.switch__text').fadeOut(5); // fadeOut() fait disparaître la classe
+    }
+});
